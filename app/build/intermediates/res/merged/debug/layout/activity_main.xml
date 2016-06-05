@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/addLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="菜名"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/balanceET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="金额"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/nameDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="描述"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/namePic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="图片信息"
+            android:inputType="textPersonName" />
+
+
+
+        <ImageView
+            android:id="@+id/addIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="add"
+            android:src="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/accountLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addLL" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/Users/zhouxi/AndroidStudioProjects/商品展示副本/app/src/main/res/layout/activity_main.xml -->
